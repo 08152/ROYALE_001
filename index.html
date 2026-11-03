@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CUBE WARS</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #101a2b;
+    color: white;
+}
+
+#scene {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+}
+
+#scene canvas {
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 55px;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 75px;
+    background: linear-gradient(135deg, #ffe34d, #ff9c24);
+    border: 3px solid white;
+    border-radius: 12px;
+    color: #202020;
+    font-size: 27px;
+    font-weight: 1000;
+    cursor: pointer;
+    box-shadow: 0 8px 30px rgba(255,170,30,0.4);
+    transition: 0.2s;
+}
+
+.play-button:hover {
+    transform: translateX(-50%) scale(1.06);
+    filter: brightness(1.1);
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="scene"></div>
+
+<button class="play-button" onclick="location.href='game.html'">
+    SPIELEN
+</button>
+
+</body>
+</html>
